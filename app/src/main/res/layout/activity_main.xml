@@ -85,4 +85,15 @@
         android:text="@string/buttonInfo"
         android:textSize="@dimen/answerSize" />
 
+    <TextView
+        android:id="@+id/ovalShape"
+        android:layout_width="109dp"
+        android:layout_height="262dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="327dp"
+        android:background="@drawable/shape"
+        android:textSize="@dimen/answerSize" />
+
 </RelativeLayout>

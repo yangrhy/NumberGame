@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         numPicker2 = (NumberPicker)findViewById(R.id.numPicker2);
         numPicker3 = (NumberPicker)findViewById(R.id.numPicker3);
         numPicker4 = (NumberPicker)findViewById(R.id.numPicker4);
-        oval = (TextView)findViewById(R.id.) // set a textView into activity_main.xml to use this
+        oval = (TextView)findViewById(R.id.ovalShape); // set a textView into activity_main.xml to use this
+
+        numPicker1.setMinValue(0);
+        numPicker1.setMaxValue(9);
+
     }
 }

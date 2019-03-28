@@ -3,7 +3,7 @@
     android:shape="oval">
 
     <solid
-        android:color="@color/colorPrimary">
+        android:color="@color/colorWhite">
     </solid>
     <stroke
         android:color="@color/colorPrimaryDark"

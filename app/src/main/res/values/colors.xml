@@ -6,5 +6,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorNumPicker">#8A72BD</color>
     <color name="colorAnswer">#84D849</color>
+    <color name="colorWhite">#40FFFFFF</color>
 
 </resources>
