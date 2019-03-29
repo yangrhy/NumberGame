@@ -7,6 +7,112 @@
     android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/processButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="543dp"
+        android:background="@color/colorAnswer"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/processButton"
+        android:textAllCaps="false"
+        android:textSize="@dimen/answerSize" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="443dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="443dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="443dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="443dp" />
+
+    <NumberPicker
+        android:id="@+id/newNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="357dp"
+        android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
+        android:solidColor="@color/colorAccent">
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/newNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="357dp"
+        android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
+        android:solidColor="@color/colorAccent">
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/newNum3"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="357dp"
+        android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
+        android:solidColor="@color/colorAccent">
+
+    </NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/newNum4"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="357dp"
+        android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
+        android:solidColor="@color/colorAccent">
+
+    </NumberPicker>
+
     <NumberPicker
         android:id="@+id/randNumPicker1"
         android:layout_width="wrap_content"
@@ -15,8 +121,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="207dp"
-        android:descendantFocusability="blocksDescendants"
         android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -29,8 +135,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="207dp"
-        android:descendantFocusability="blocksDescendants"
         android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -43,8 +149,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="207dp"
-        android:descendantFocusability="blocksDescendants"
         android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -57,8 +163,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="207dp"
-        android:descendantFocusability="blocksDescendants"
         android:background="@color/colorNumPicker"
+        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -117,18 +223,6 @@
 
     </NumberPicker>
 
-    <TextView
-        android:id="@+id/textViewAnswer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="545dp"
-        android:background="@color/colorAnswer"
-        android:text="@string/answerText"
-        android:textSize="@dimen/answerSize" />
-
     <Button
         android:id="@+id/randomButton"
         android:layout_width="wrap_content"
@@ -139,31 +233,50 @@
         android:layout_marginTop="139dp"
         android:background="@color/colorAnswer"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/buttonInfo"
+        android:text="@string/randomButton"
+        android:textAllCaps="false"
+        android:textSize="@dimen/answerSize" />
+
+    <Button
+        android:id="@+id/newNumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="294dp"
+        android:background="@color/colorAnswer"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/newNumButton"
         android:textAllCaps="false"
         android:textSize="@dimen/answerSize" />
 
     <TextView
-        android:id="@+id/ovalShape"
-        android:layout_width="97dp"
-        android:layout_height="139dp"
+        android:id="@+id/enterNumLabel"
+        android:layout_width="254dp"
+        android:layout_height="26dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="538dp"
-        android:background="@drawable/shape"
-        android:textSize="@dimen/answerSize"
-        android:visibility="invisible" />
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/instruct"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/answerSize" />
 
     <TextView
-        android:id="@+id/enterNumLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
+        android:id="@+id/enterNumLabel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="483dp"
         android:ems="10"
-        android:text="Please enter a 4 digit number:" />
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/instruct2"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/answerSize" />
 
 </RelativeLayout>
