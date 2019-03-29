@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="answerSize">25sp</dimen>
+    <dimen name="answerSize">18sp</dimen>
 </resources>
