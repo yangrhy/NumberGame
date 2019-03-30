@@ -65,8 +65,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="357dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -79,8 +79,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="357dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -93,8 +93,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="357dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -107,8 +107,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="357dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -121,8 +121,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="207dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -135,8 +135,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="207dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -149,8 +149,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="207dp"
-        android:background="@color/colorNumPicker"
         android:descendantFocusability="blocksDescendants"
+        android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>

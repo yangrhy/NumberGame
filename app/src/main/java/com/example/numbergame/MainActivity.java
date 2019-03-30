@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,21 +53,64 @@ public class MainActivity extends AppCompatActivity {
         numPicker4.setMinValue(0);
         numPicker4.setMaxValue(9);
 
+        newNum1.setMinValue(0);
+        newNum1.setMaxValue(9);
+        newNum2.setMinValue(0);
+        newNum2.setMaxValue(9);
+        newNum3.setMinValue(0);
+        newNum3.setMaxValue(9);
+        newNum4.setMinValue(0);
+        newNum4.setMaxValue(9);
+
+        randomNumPicker1.setMinValue(0);
+        randomNumPicker1.setMaxValue(9);
+        randomNumPicker2.setMinValue(0);
+        randomNumPicker2.setMaxValue(9);
+        randomNumPicker3.setMinValue(0);
+        randomNumPicker3.setMaxValue(9);
+        randomNumPicker4.setMinValue(0);
+        randomNumPicker4.setMaxValue(9);
+
+        randomButton.setOnClickListener(new ButtonClick());
+        newNumButton.setOnClickListener(new ButtonClick());
+        processButton.setOnClickListener(new ButtonClick());
 
     }
 
     private class ButtonClick implements Button.OnClickListener {
         public void onClick(View v) {
-            if (v.getId() == R.id.randomButton) {
-                int[]numArray = new int[4];
 
+            if (v.getId() == R.id.randomButton) {
+                num1 = numPicker1.getValue();
+                num2 = numPicker2.getValue();
+                num3 = numPicker3.getValue();
+                num4 = numPicker4.getValue();
+                ArrayList<Integer>numbers = new ArrayList<>();
+                ArrayList<Integer>randNums = new ArrayList<>();
+
+                Random randNum = new Random();
+                numbers.add(num1);
+                numbers.add(num2);
+                numbers.add(num3);
+                numbers.add(num4);
+
+                for (int i = 0; i < 4; i++) {
+                    int index = randNum.nextInt(numbers.size());
+                    randNums.add(numbers.get(index));
+                    numbers.remove(index);
+                }
+                randomNumPicker1.setValue(randNums.get(0));
+                randomNumPicker2.setValue(randNums.get(1));
+                randomNumPicker3.setValue(randNums.get(2));
+                randomNumPicker4.setValue(randNums.get(3));
             }
             else if (v.getId() == R.id.newNumButton) {
-                int[]numArray = new int[4];
+                int result;
+                String firstNum, secNum;
+
 
             }
-            else if (v.getId() == R.id.randomButton) {
-                int[]numArray = new int[4];
+            else if (v.getId() == R.id.processButton) {
 
             }
         }
