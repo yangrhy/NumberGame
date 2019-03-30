@@ -91,67 +91,13 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
 
             if (v.getId() == R.id.randomButton) {
-                num1 = numPicker1.getValue();
-                num2 = numPicker2.getValue();
-                num3 = numPicker3.getValue();
-                num4 = numPicker4.getValue();
-                ArrayList<Integer>numbers = new ArrayList<>();
-                ArrayList<Integer>randNums = new ArrayList<>();
-
-                Random rand = new Random();
-                numbers.add(num1);
-                numbers.add(num2);
-                numbers.add(num3);
-                numbers.add(num4);
-
-                for (int i = 0; i < 4; i++) {
-                    int index = rand.nextInt(numbers.size());
-                    randNums.add(numbers.get(index));
-                    numbers.remove(index);
-                }
-                randomNumPicker1.setValue(randNums.get(0));
-                randomNumPicker2.setValue(randNums.get(1));
-                randomNumPicker3.setValue(randNums.get(2));
-                randomNumPicker4.setValue(randNums.get(3));
+                Randomize();
             }
             else if (v.getId() == R.id.newNumButton) {
                 FindNewNum();
             }
             else if (v.getId() == R.id.processButton) {
-                int radioButtonId = myRadioGroup.getCheckedRadioButtonId();
-                ArrayList<Integer>numsToAdd = new ArrayList<>();
-                View radioButtonPicked = myRadioGroup.findViewById(radioButtonId);
-                // 0 if newNumPicker4 chosen to 3 if newNumPicker1 chosen
-                int rbIndex = myRadioGroup.indexOfChild(radioButtonPicked);
-                int thisNum1, thisNum2, thisNum3, thisNum4;
-
-                thisNum1 = newNum1.getValue();
-                thisNum2 = newNum2.getValue();
-                thisNum3 = newNum3.getValue();
-                thisNum4 = newNum4.getValue();
-
-                if (rbIndex == 3) {
-                    numsToAdd.add(thisNum2);
-                    numsToAdd.add(thisNum3);
-                    numsToAdd.add(thisNum4);
-                }
-                else if (rbIndex == 2) {
-                    numsToAdd.add(thisNum1);
-                    numsToAdd.add(thisNum3);
-                    numsToAdd.add(thisNum4);
-                }
-                else if (rbIndex == 1) {
-                    numsToAdd.add(thisNum1);
-                    numsToAdd.add(thisNum2);
-                    numsToAdd.add(thisNum4);
-                }
-                else if (rbIndex == 0) {
-                    numsToAdd.add(thisNum1);
-                    numsToAdd.add(thisNum3);
-                    numsToAdd.add(thisNum2);
-                }
-
-                FindNum(numsToAdd);
+                Process();
             }
             else if (v.getId() == R.id.restartButton) {
                 Restart();
@@ -192,11 +138,69 @@ public class MainActivity extends AppCompatActivity {
             finalNum = 9;
         }
 
-        Toast.makeText(this, String.valueOf(finalNum), Toast.LENGTH_LONG).show();
         answerString += String.valueOf(finalNum);
         answerText.setText(answerString);
     }
+    private void Randomize () {
+        num1 = numPicker1.getValue();
+        num2 = numPicker2.getValue();
+        num3 = numPicker3.getValue();
+        num4 = numPicker4.getValue();
+        ArrayList<Integer>numbers = new ArrayList<>();
+        ArrayList<Integer>randNums = new ArrayList<>();
 
+        Random rand = new Random();
+        numbers.add(num1);
+        numbers.add(num2);
+        numbers.add(num3);
+        numbers.add(num4);
+
+        for (int i = 0; i < 4; i++) {
+            int index = rand.nextInt(numbers.size());
+            randNums.add(numbers.get(index));
+            numbers.remove(index);
+        }
+        randomNumPicker1.setValue(randNums.get(0));
+        randomNumPicker2.setValue(randNums.get(1));
+        randomNumPicker3.setValue(randNums.get(2));
+        randomNumPicker4.setValue(randNums.get(3));
+    }
+    private void Process () {
+        int radioButtonId = myRadioGroup.getCheckedRadioButtonId();
+        ArrayList<Integer>numsToAdd = new ArrayList<>();
+        View radioButtonPicked = myRadioGroup.findViewById(radioButtonId);
+        // 0 if newNumPicker4 chosen to 3 if newNumPicker1 chosen
+        int rbIndex = myRadioGroup.indexOfChild(radioButtonPicked);
+        int thisNum1, thisNum2, thisNum3, thisNum4;
+
+        thisNum1 = newNum1.getValue();
+        thisNum2 = newNum2.getValue();
+        thisNum3 = newNum3.getValue();
+        thisNum4 = newNum4.getValue();
+
+        if (rbIndex == 3) {
+            numsToAdd.add(thisNum2);
+            numsToAdd.add(thisNum3);
+            numsToAdd.add(thisNum4);
+        }
+        else if (rbIndex == 2) {
+            numsToAdd.add(thisNum1);
+            numsToAdd.add(thisNum3);
+            numsToAdd.add(thisNum4);
+        }
+        else if (rbIndex == 1) {
+            numsToAdd.add(thisNum1);
+            numsToAdd.add(thisNum2);
+            numsToAdd.add(thisNum4);
+        }
+        else if (rbIndex == 0) {
+            numsToAdd.add(thisNum1);
+            numsToAdd.add(thisNum3);
+            numsToAdd.add(thisNum2);
+        }
+
+        FindNum(numsToAdd);
+    }
     private void Restart () {
         Intent intent = new Intent(MainActivity.this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //this will always start your activity as a new task
@@ -225,7 +229,6 @@ public class MainActivity extends AppCompatActivity {
         else {
             result = number2 - number1;
         }
-        Toast.makeText(this, String.valueOf(result), Toast.LENGTH_LONG).show();
 
         String resultString = String.valueOf(result);
         char[]resultChar = resultString.toCharArray();
