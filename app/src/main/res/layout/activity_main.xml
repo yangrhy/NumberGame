@@ -296,7 +296,7 @@
             android:gravity="center" />
     </RadioGroup>
 
-    <EditText
+    <TextView
         android:id="@+id/answerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -304,8 +304,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="102dp"
         android:layout_marginTop="528dp"
+        android:fontFamily="sans-serif-medium"
         android:inputType="textPersonName"
         android:text="@string/answerText"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
 
 </RelativeLayout>

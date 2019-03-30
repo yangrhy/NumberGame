@@ -51,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
         newNum3 = (NumberPicker)findViewById(R.id.newNum3);
         newNum4 = (NumberPicker)findViewById(R.id.newNum4);
 
-        //oval = (TextView)findViewById(R.id.ovalShape); // set a textView into activity_main.xml to use this
-
         numPicker1.setMinValue(0);
         numPicker1.setMaxValue(9);
         numPicker2.setMinValue(0);
@@ -70,7 +68,10 @@ public class MainActivity extends AppCompatActivity {
         newNum3.setMaxValue(9);
         newNum4.setMinValue(0);
         newNum4.setMaxValue(9);
-
+        newNum1.setEnabled(false);
+        newNum2.setEnabled(false);
+        newNum3.setEnabled(false);
+        newNum4.setEnabled(false);
 
         randomNumPicker1.setMinValue(0);
         randomNumPicker1.setMaxValue(9);
@@ -80,6 +81,10 @@ public class MainActivity extends AppCompatActivity {
         randomNumPicker3.setMaxValue(9);
         randomNumPicker4.setMinValue(0);
         randomNumPicker4.setMaxValue(9);
+        randomNumPicker1.setEnabled(false);
+        randomNumPicker2.setEnabled(false);
+        randomNumPicker3.setEnabled(false);
+        randomNumPicker4.setEnabled(false);
 
         randomButton.setOnClickListener(new ButtonClick());
         newNumButton.setOnClickListener(new ButtonClick());
@@ -138,9 +143,10 @@ public class MainActivity extends AppCompatActivity {
             finalNum = 9;
         }
 
-        answerString += String.valueOf(finalNum);
+        answerString += " " + String.valueOf(finalNum);
         answerText.setText(answerString);
     }
+
     private void Randomize () {
         num1 = numPicker1.getValue();
         num2 = numPicker2.getValue();
