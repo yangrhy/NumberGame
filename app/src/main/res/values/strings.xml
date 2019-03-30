@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">NumberGame</string>
-    <string name="answerText">The new number is: </string>
+    <string name="answerText">The number chosen was: </string>
     <string name="randomButton">Click to randomize numbers! </string>
     <string name="instruct">Please enter a 4 digit number: </string>
     <string name="newNumButton">Click here for the new number!</string>
     <string name="instruct2">Please choose one of the radio buttons unless the number is a zero. </string>
     <string name="processButton">Click to find the number left out!</string>
+    <string name="restartButton">Restart</string>
+
 </resources>

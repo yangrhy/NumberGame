@@ -21,6 +21,20 @@
         android:textAllCaps="false"
         android:textSize="@dimen/answerSize" />
 
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="565dp"
+        android:background="@color/colorAnswer"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/restartButton"
+        android:textAllCaps="false"
+        android:textSize="@dimen/answerSize" />
+
     <NumberPicker
         android:id="@+id/newNum1"
         android:layout_width="wrap_content"
@@ -29,7 +43,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="319dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -43,7 +56,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="319dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -57,7 +69,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="319dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -71,7 +82,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="319dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -85,7 +95,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="189dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -99,7 +108,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="189dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -113,7 +121,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="189dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -127,7 +134,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="189dp"
-        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
         android:solidColor="@color/colorAccent">
 
@@ -244,6 +250,7 @@
         android:textSize="@dimen/answerSize" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -288,5 +295,17 @@
             android:layout_weight="1"
             android:gravity="center" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/answerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="528dp"
+        android:inputType="textPersonName"
+        android:text="@string/answerText"
+        android:textColor="@color/colorWhite" />
 
 </RelativeLayout>
