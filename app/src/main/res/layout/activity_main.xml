@@ -29,8 +29,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="319dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -43,8 +43,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="319dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -57,8 +57,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="319dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -71,8 +71,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="319dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -85,8 +85,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="323dp"
         android:layout_marginTop="189dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -99,8 +99,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="223dp"
         android:layout_marginTop="189dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -113,8 +113,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="125dp"
         android:layout_marginTop="189dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -127,8 +127,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="189dp"
+        android:textColor="@color/colorAnswer"
         android:background="@color/colorNumPicker"
-        android:descendantFocusability="blocksDescendants"
         android:solidColor="@color/colorAccent">
 
     </NumberPicker>
@@ -208,7 +208,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="274dp"
+        android:layout_marginTop="278dp"
         android:background="@color/colorAnswer"
         android:fontFamily="sans-serif-medium"
         android:text="@string/newNumButton"
@@ -252,7 +252,6 @@
         android:layout_marginStart="49dp"
         android:layout_marginTop="404dp"
         android:orientation='horizontal'>
-        >
 
         <RadioButton
             android:id="@+id/radioButton4"

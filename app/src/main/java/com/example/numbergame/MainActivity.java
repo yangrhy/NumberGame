@@ -1,3 +1,5 @@
+// Ricky Yang
+// March 4, 2019
 package com.example.numbergame;
 
 import android.support.v7.app.AppCompatActivity;
@@ -96,14 +98,14 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<Integer>numbers = new ArrayList<>();
                 ArrayList<Integer>randNums = new ArrayList<>();
 
-                Random randNum = new Random();
+                Random rand = new Random();
                 numbers.add(num1);
                 numbers.add(num2);
                 numbers.add(num3);
                 numbers.add(num4);
 
                 for (int i = 0; i < 4; i++) {
-                    int index = randNum.nextInt(numbers.size());
+                    int index = rand.nextInt(numbers.size());
                     randNums.add(numbers.get(index));
                     numbers.remove(index);
                 }
@@ -136,7 +138,31 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 String resultString = String.valueOf(result);
+                char[]resultChar = resultString.toCharArray();
+                ArrayList<Integer>resultNums = new ArrayList<>();
 
+                for (int i = 0; i < resultChar.length; i++) {
+                    resultNums.add(Integer.parseInt(String.valueOf(resultChar[i])));
+                }
+
+                if (resultNums.size() == 4) {
+                    newNum1.setValue(resultNums.get(0));
+                    newNum2.setValue(resultNums.get(1));
+                    newNum3.setValue(resultNums.get(2));
+                    newNum4.setValue(resultNums.get(3));
+                }
+                else if (resultNums.size() == 3) {
+                    newNum1.setValue(resultNums.get(0));
+                    newNum2.setValue(resultNums.get(1));
+                    newNum3.setValue(resultNums.get(2));
+                }
+                else if (resultNums.size() == 2) {
+                    newNum1.setValue(resultNums.get(0));
+                    newNum2.setValue(resultNums.get(1));
+                }
+                else if (resultNums.size() == 1) {
+                    newNum1.setValue(resultNums.get(0));
+                }
             }
             else if (v.getId() == R.id.processButton) {
 
