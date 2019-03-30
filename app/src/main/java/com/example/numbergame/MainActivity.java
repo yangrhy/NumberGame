@@ -61,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
         newNum3.setMaxValue(9);
         newNum4.setMinValue(0);
         newNum4.setMaxValue(9);
+        newNum1.setEnabled(false);
+        newNum2.setEnabled(false);
+        newNum3.setEnabled(false);
+        newNum4.setEnabled(false);
 
         randomNumPicker1.setMinValue(0);
         randomNumPicker1.setMaxValue(9);
@@ -70,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
         randomNumPicker3.setMaxValue(9);
         randomNumPicker4.setMinValue(0);
         randomNumPicker4.setMaxValue(9);
+        randomNumPicker1.setEnabled(false);
+        randomNumPicker2.setEnabled(false);
+        randomNumPicker3.setEnabled(false);
+        randomNumPicker4.setEnabled(false);
 
         randomButton.setOnClickListener(new ButtonClick());
         newNumButton.setOnClickListener(new ButtonClick());
@@ -106,8 +114,28 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (v.getId() == R.id.newNumButton) {
                 int result;
-                String firstNum, secNum;
+                String firstNum = "";
+                String secNum = "";
+                firstNum += numPicker1.getValue();
+                firstNum += numPicker2.getValue();
+                firstNum += numPicker3.getValue();
+                firstNum += numPicker4.getValue();
+                secNum += randomNumPicker1.getValue();
+                secNum += randomNumPicker2.getValue();
+                secNum += randomNumPicker3.getValue();
+                secNum += randomNumPicker4.getValue();
 
+                int number1 = Integer.parseInt(firstNum);
+                int number2 = Integer.parseInt(secNum);
+
+                if (number1 >= number2) {
+                    result = number1 - number2;
+                }
+                else {
+                    result = number2 - number1;
+                }
+
+                String resultString = String.valueOf(result);
 
             }
             else if (v.getId() == R.id.processButton) {
